@@ -1,0 +1,2 @@
+memory_profiler==0.47
+psutil==5.2.2
