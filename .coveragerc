@@ -1,2 +1,2 @@
 [run]
-include = lib/memunit.py
+include = lib/memunit/__init__.py
