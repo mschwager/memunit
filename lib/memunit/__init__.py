@@ -5,8 +5,6 @@ import operator
 
 import memory_profiler
 
-PROFILER = memory_profiler.memory_usage
-
 
 class MemoryUsageException(Exception):
     pass
@@ -15,7 +13,7 @@ class MemoryUsageException(Exception):
 def _assert_wrapper(fn, op=operator.not_, failure_message="Max usage {}"):
     @functools.wraps(fn)
     def wrapper(*args, **kwargs):
-        (mem_usage, retval) = PROFILER(
+        (mem_usage, retval) = memory_profiler.memory_usage(
             (fn, args, kwargs),
             max_usage=True,
             retval=True
