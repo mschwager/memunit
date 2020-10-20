@@ -16,7 +16,7 @@ with open(requirements_dev_filename) as fd:
 
 setup(
     name='memunit',
-    version='0.5.0',
+    version='0.5.1',
     description='',
     url='',
     packages=['memunit'],
@@ -31,10 +31,10 @@ setup(
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     install_requires=install_requires,
     tests_require=tests_require,
