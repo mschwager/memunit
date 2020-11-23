@@ -19,7 +19,10 @@ def _assert_wrapper(fn, op=operator.not_, failure_message="Max usage {}"):
             retval=True
         )
 
-        max_usage = round(mem_usage[0], 2)
+        if not isinstance(mem_usage, float):
+            mem_usage = mem_usage[0]
+
+        max_usage = round(mem_usage, 2)
 
         if not op(max_usage):
             raise MemoryUsageException(failure_message.format(max_usage))
