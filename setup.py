@@ -16,7 +16,7 @@ with open(requirements_dev_filename) as fd:
 
 setup(
     name='memunit',
-    version='0.5.1',
+    version='0.5.2',
     description='',
     url='',
     packages=['memunit'],
